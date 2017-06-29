@@ -41,6 +41,10 @@
     <Exec Command="$(NUnitPath) &quot;$(SolutionRoot)\PodcastUtilities.nunit&quot; /nologo /config=$(Configuration) /xml=&quot;$(BuildOutputRoot)\TestOutput.xml&quot;" />
 	</Target>
 
+	<Target Name="Test">
+    <Exec Command="$(NUnitPath) &quot;$(SolutionRoot)\PodcastUtilities.nunit&quot; /nologo /config=$(Configuration) /xml=&quot;$(BuildOutputRoot)\TestOutput.xml&quot;" />
+	</Target>
+
   <!-- Clean and rebuild the solution -->
   <Target Name="Rebuild">
     <MSBuild
