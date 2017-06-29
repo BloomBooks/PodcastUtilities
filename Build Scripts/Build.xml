@@ -1,6 +1,6 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+  <Import Project=".\MSBuild.Community.Tasks.Targets"/>
   <UsingTask AssemblyName="AssemblyInfoTask, Version=1.0.51130.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" TaskName="AssemblyInfo"/>
 
   <PropertyGroup Condition=" '$(Configuration)' == '' ">
