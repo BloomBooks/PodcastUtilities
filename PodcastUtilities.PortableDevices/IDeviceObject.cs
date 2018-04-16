@@ -18,6 +18,7 @@
 // NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 #endregion
+using System;
 using System.Collections.Generic;
 
 namespace PodcastUtilities.PortableDevices
@@ -41,6 +42,11 @@ namespace PodcastUtilities.PortableDevices
         /// Only relevant for storage objects - so maybe shouldn't be here...
         /// </summary>
         long AvailableFreeSpace { get; }
+
+        /// <summary>
+        /// Modify time of the object
+        /// </summary>
+        DateTime ModifyTime { get; }
 
         /// <summary>
         /// gets all the folder objects
