@@ -83,6 +83,18 @@ namespace PodcastUtilities.PortableDevices
         }
 
         /// <summary>
+        /// Modify time of the object
+        /// </summary>
+        public DateTime ModifyTime
+        {
+            get
+            {
+                return _portableDeviceHelper.GetDateProperty(_portableDeviceContent, Id,
+                    PortableDevicePropertyKeys.WPD_OBJECT_DATE_MODIFIED);
+            }
+        }
+
+        /// <summary>
         /// gets all the folder objects
         /// </summary>
         /// <param name="pattern">pattern to match</param>
